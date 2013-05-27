@@ -1,0 +1,133 @@
+<?php require 'controllers/master.php'; $web=new master(); $seccion="atracciones"; $id=$_GET['id'];?>
+!!! 5
+html(lang="es-Es")
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1")
+	meta(name="description", content="Directorio turistico del Estado de Hidalgo")
+	title Balnearios | Tope Aqui
+	link(rel="stylesheet", href="/stylesheets/app.css")
+	link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Dosis:300|Roboto+Condensed|Oswald:700|BenchNine',rel='stylesheet',type='text/css')
+	link(rel="stylesheet", href="/stylesheets/foundation.css")
+	link(rel="stylesheet", href="/stylesheets/fontello.css")
+	script(src="/javascripts/modernizr.foundation.js")
+	script function selectStep(n){if(n==1){$(".progress-selected").animate({marginLeft:'10px'});}else if(n==2){$(".progress-selected").animate({marginLeft:'67px'});}else if(n==3){$(".progress-selected").animate({marginLeft:'126px'});}else if(n==4){$(".progress-selected").animate({marginLeft:'185px'});}else if(n==5){$(".progress-selected").animate({marginLeft:'240px'});}$(".content-switcher").hide();$("#content"+n).show();}
+	//GALERIA FOTOGRAFICA
+	script(src="/javascripts/jquery-1.6.1.min.js")
+	link(rel="stylesheet", href="/stylesheets/prettyPhoto.css", media="screen", charset="utf-8")
+	script(src="/javascripts/jquery.prettyPhoto.js")
+	body
+		.row
+			.twelve.columns
+				#publicidadTop
+					img(src="/images/inobe.gif", width="100%", alt="Agencia de Publicidad Hidalgo")
+		.row
+			.twelve.columns
+				#cintillo
+					#logotipo
+						<?php $web->logo(); ?>
+					#slogan
+						<?php $web->sloganAnunciate(); ?>
+		.row
+			header.twelve.columns
+				section#top
+					article#imgTop
+						<?php $atraccion=$_GET['id']; $web->topImg($seccion,$atraccion); ?>
+		.row			
+			.twelve.columns
+				nav#navegacion
+					<?php $web->menu(); ?>
+				#buscador
+					form(action="/buscador.php", method="POST")#search
+						input(type="text", name="buscar", placeholder="Buscar...")
+						input(type="hidden",name="tipo",value="<?php echo $seccion;?>")
+						input(type="submit", value="Ir")
+		section.row
+			article.twelve.columns
+				span.tituloSecciones <?php $web->tituloSeccion($seccion,$atraccion); ?>
+		section.row.top
+			<?php $web->logoRedes($seccion,$atraccion); ?>
+			#costos
+				span.subtitulos COSTOS
+				<?php $web->costos($atraccion); ?>
+			#direccion
+				span.subtitulos DIRECCIÓN
+				<?php $web->direccion($seccion,$atraccion); ?>
+		section.row
+			article.twelve.columns
+				#formulario
+					.mostrar
+						a(href="javascript:void(0)")#mostrar 
+							img(src="/images/right_round.png")
+					.ocultar
+						a(href="javascript:void(0)")#ocultar
+							img(src="/images/right_round2.png")
+					#formComentario
+						#contacto
+							form(action="/controllers/comment.php", name="myForm", method="POST")#myForm
+								input(type="hidden", name="seccion",value="<?php echo $seccion; ?>")
+								input(type="hidden", name="idSeccion",value="<?php echo $id; ?>")
+								label Nombre:
+								input(type="text", name="nombre", title="nombre", required)
+								label Mail:
+								input(type="text", name="mail", title="nombre", required)
+								label Comentario
+								textarea(name="comentario", title="nombre", required)
+								input(type="submit", value="ENVIAR")#clic
+							#respuesta
+						#comentario
+							h2 Comentarios
+							#contentComentarios
+								<?php $web->comentarios($atraccion,$seccion); ?>
+		section.row
+			article.twelve.columns
+				#descripcion
+					#txtDescripcion
+						<?php $web->descripcion($seccion,$atraccion); ?>
+		section.row
+			article.twelve.columns
+				#servicios
+					#txtServicios
+						span.subtitulos SERVICIOS
+						<?php $web->servicios($seccion,$atraccion); ?>
+		section.row
+			article.three.columns.color
+				<?php $web->adicionales($seccion,$atraccion, 1); ?>
+			article.three.columns.color
+				<?php $web->adicionales($seccion,$atraccion, 2); ?>
+			article.three.columns.color
+				<?php $web->adicionales($seccion,$atraccion, 3); ?>
+			article.three.columns.color
+				<?php $web->adicionales($seccion,$atraccion, 4); ?>
+		<?php $web->infoAdicional($atraccion); ?>
+		section.row
+			article#featured
+				<?php $web->galeria($seccion,$atraccion); ?>
+		section.row#footer
+			article.six.columns.topfooter
+				span.titulosFooter NUMEROS DE EMERGENCIAS
+				<?php $web->emergencias($atraccion,$seccion); ?>
+			article.six.columns.topfooter
+		footer.row
+			.twelve.columns
+				img(src="/images/inobe.gif", width="100%", alt="Agencia de Publicidad Hidalgo")
+		//Foundation
+		script(src="/javascripts/jquery.js")
+		script(src="/javascripts/jquery.foundation.orbit.js")
+		script(src="/javascripts/jquery.foundation.reveal.js")
+		script(type="text/javascript")
+			$(window).load(function(){$("#featured").orbit({animation: 'fade',animationSpeed: 800,timer: true,resetTimerOnClick: false,advanceSpeed: 4000,pauseOnHover: false,startClockOnMouseOut: false,startClockOnMouseOutAfter: 1000,directionalNav: true,captions: true,captionAnimation: 'fade',captionAnimationSpeed: 800,bullets: false,bulletThumbs: false,bulletThumbLocation: '',afterSlideChange: function(){},fluid: true});});
+		script
+			$(document).on("ready", main);
+			function main(){
+				$("#mostrar").click(function(){
+					$("#formComentario").toggle(300);
+					$(".mostrar").css("display","none");
+					$(".ocultar").css("display","block");
+				});
+				$("#ocultar").click(function(){
+					$("#formComentario").toggle(300);
+					$(".mostrar").css("display","block");
+					$(".ocultar").css("display","none");
+				});
+			}
+		script(src="/javascripts/comentarios.js")
