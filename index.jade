@@ -1,0 +1,144 @@
+<?php require 'controllers/master.php'; $web=new master();?>
+!!! 5
+html(lang="es-Es")
+	meta(charset="utf-8")
+	meta(name="viewport", content="width=device-width,initial-scale=1,maximum-scale=1")
+	meta(name="description", content="Directorio turistico del Estado de Hidalgo")
+	title Turismo en Hidalgo | Tope Aqui
+	link(rel="stylesheet", href="stylesheets/app.css")
+	link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Dosis:300|Roboto+Condensed',rel='stylesheet',type='text/css')
+	link(rel="stylesheet", href="stylesheets/foundation.css")
+	link(rel="stylesheet", href="stylesheets/fontello.css")
+	script(src="javascripts/modernizr.foundation.js")
+	script function selectStep(n){if(n==1){$(".progress-selected").animate({marginLeft:'10px'});}else if(n==2){$(".progress-selected").animate({marginLeft:'67px'});}else if(n==3){$(".progress-selected").animate({marginLeft:'126px'});}else if(n==4){$(".progress-selected").animate({marginLeft:'185px'});}else if(n==5){$(".progress-selected").animate({marginLeft:'240px'});}$(".content-switcher").hide();$("#content"+n).show();}
+	//GALERIA FOTOGRAFICA
+	script(src="/javascripts/jquery-1.6.1.min.js")
+	link(rel="stylesheet", href="/stylesheets/prettyPhoto.css", media="screen", charset="utf-8")
+	script(src="/javascripts/jquery.prettyPhoto.js")
+	body
+		.row
+			.twelve.columns
+				#publicidadTop
+					img(src="/images/inobe.gif", width="100%", alt="Agencia de Publicidad Hidalgo")
+		.row
+			.twelve.columns
+				#cintillo
+					#logotipo
+						<?php $web->logo(); ?>
+					#slogan
+						<?php $web->sloganAnunciate(); ?>
+		.row
+			header.twelve.columns
+				article#featured
+					<?php $web->galeriaInicio(); ?>
+		.row
+			.twelve.columns
+				nav#navegacionIndex
+					<?php $web->menu(); ?>
+		.row
+			.twelve.columns
+				.redes
+					.logos
+						<?php $web->redes(); ?>
+				.tweet
+					<?php $web->mostrarTweets(); ?>
+		section.row
+			article.five.columns
+				// BALNEARIOS
+				#balnearios
+					.txtBalnearios
+						h2 BALNEARIOS
+						span.descripcion 
+							| Tu diversion esta garantizada, visita la gran variedad de Balnearios en Hidalgo
+				.fotoSeccion
+					a(href="http://www.siscomcel.com/seccion/atracciones")
+						img(src="/fotos/balnearios-hidalgo.jpg", width="100%", alt="Balnearios en Hidalgo")
+				// RESTAURANTES
+				#restaurantes
+					h2 RESTAURANTES
+					span.descripcion
+						| Gran variedad de platillos en nuestros diferentes restaurantes
+				.fotoSeccion
+					a(href="http://www.siscomcel.com/seccion/restaurantes")
+						img(src="/fotos/restaurantes-hidalgo.jpg", width="100%", alt="Restaurantes en Hidalgo")
+				#redesBottom
+					h2 SIGUENOS
+					.red
+						a(href="#", target="_blank")
+							img(src="/images/facebook.png", alt="Facebook")
+					.red
+						a(href="#", target="_blank")
+							img(src="/images/twitter.png", alt="Twitter")
+					.red
+						a(href="#", target="_blank")
+							img(src="/images/youtube.png", alt="Youtube")
+					.red
+						a(href="#", target="_blank")
+							img(src="/images/google.png", alt="Google Plus")
+			article.seven.columns
+				.row
+					.five.columns.sinBorde
+						// HOTELES
+						#hoteles
+							h2 HOTELES
+							span.descripcion
+								| Tenemos una gran oferta de hoteles en Hidalgo
+					.seven.columns.sinPadding
+						.fotoHotel
+							a(href="http://www.siscomcel.com/seccion/hoteles")
+								img(src="/fotos/hoteles-hidalgo.jpg",width="100%", alt="Hoteles en Hidalgo")
+				// ENTREVISTAS REPORTAJES
+				.row
+					.twelve.columns
+						<?php $web->contenido(); ?>
+				.row
+					.twelve.columns
+						img(src="/images/cbta67.gif", atl="cbta 67 ixmiquilpan", width="100%")
+				.row
+					.six.columns.sinBorde
+						//VIDA NOCTURNA
+						#vidaNocturna
+							h2 VIDA NOCTURNA
+							span.descripcion
+								| Diversión cuando se oculta el Sol
+					.six.columns.sinPadding
+						//LUGARES DE INTERES
+						#sitios
+							h2 SITIOS INTERES
+							span.descripcion
+								| Descubre Hidalgo
+			#videoInicio.reveal-modal.large
+				.flex-video
+					iframe(width="560", height="315", src="http://www.youtube.com/embed/H1_RuQsITSA", frameborder="0", allowfullscreen)
+			#galeriaModal.reveal-modal.large
+				span.titleComment FOTOGRAFIAS
+				<?php $web->verGaleria();?>
+				a.close-reveal-modal
+					&#215;
+			#videoModal.reveal-modal.large
+				.flex-video
+					<?php $web->verVideoInicio();?>
+				a.close-reveal-modal
+					&#215;
+			#commentModal.reveal-modal.large
+				span.titleComment COMENTARIOS
+				<?php $web->comentariosPrincipal(); ?>
+				a.close-reveal-modal
+					&#215;
+			#contentArticulos.reveal-modal.large
+				span.titleComment ARTICULOS ANTERIORES
+				<?php $web->articulosAnteriores(); ?>
+				a.close-reveal-modal
+					&#215;
+		footer.row
+			.twelve.columns
+				img(src="/images/inobe.gif", width="100%", alt="Agencia de Publicidad Hidalgo")
+		//Foundation
+		script(src="javascripts/jquery.js")
+		script(src="javascripts/jquery.foundation.orbit.js")
+		script(src="javascripts/jquery.foundation.reveal.js")
+		script(type="text/javascript")
+			$(window).load(function(){$("#featured").orbit({animation: 'fade',animationSpeed: 800,timer: true,resetTimerOnClick: false,advanceSpeed: 4000,pauseOnHover: false,startClockOnMouseOut: false,startClockOnMouseOutAfter: 1000,directionalNav: true,captions: true,captionAnimation: 'fade',captionAnimationSpeed: 800,bullets: false,bulletThumbs: false,bulletThumbLocation: '',afterSlideChange: function(){},fluid: true});});
+		script(src="javascripts/cometarioReportaje.js")
+		script
+			var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-16329009-1']);_gaq.push(['_trackPageview']);(function(){var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
