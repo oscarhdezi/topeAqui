@@ -1,0 +1,1907 @@
+/*
+	Team iNobe
+	Date 17/01/2013
+	Web  www.topeaqui.com
+*/
+/* line 44, ../sass/app.scss */
+body {
+  background: url(../images/bg.jpg) no-repeat top center white fixed;
+}
+@media only screen and (max-width: 320px) {
+  /* line 44, ../sass/app.scss */
+  body {
+    background: #fff;
+    margin: 0px;
+  }
+}
+
+/* line 51, ../sass/app.scss */
+form {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 55, ../sass/app.scss */
+  header {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 61, ../sass/app.scss */
+hr {
+  margin: 5px 0px !important;
+}
+
+/* line 64, ../sass/app.scss */
+h1, h2, h3, h4 {
+  margin: 0px;
+}
+
+/* line 67, ../sass/app.scss */
+h1, .titleComment {
+  color: #598b21;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 35px;
+  text-shadow: 0px 1px 1px black;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 73, ../sass/app.scss */
+h2 {
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 36px;
+  text-shadow: 0px 1px 1px black;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  padding-bottom: 10px;
+}
+
+/* line 78, ../sass/app.scss */
+h3 {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-size: 1em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 78, ../sass/app.scss */
+  h3 {
+    color: white;
+    font-size: .9em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 78, ../sass/app.scss */
+  h3 {
+    color: #000000;
+    font-size: 1.2em;
+  }
+}
+
+/* line 91, ../sass/app.scss */
+h4 {
+  color: #232323;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 26px;
+  text-shadow: 0px 1px 1px black;
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 96, ../sass/app.scss */
+hr {
+  border: 1px solid white;
+  margin: 7px 0px;
+}
+
+/* line 100, ../sass/app.scss */
+label {
+  color: #2d2d2d;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+}
+
+/* line 105, ../sass/app.scss */
+p {
+  color: #7f7f7f;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin: 0px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 105, ../sass/app.scss */
+  p {
+    font-size: 1.2em;
+  }
+}
+
+/* line 115, ../sass/app.scss */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* line 120, ../sass/app.scss */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+}
+
+/* line 123, ../sass/app.scss */
+::-webkit-scrollbar-track-piece {
+  background-color: #EFEFEF;
+  -webkit-border-radius: 4px;
+}
+
+/* line 127, ../sass/app.scss */
+::-webkit-scrollbar-thumb:vertical {
+  -webkit-border-radius: 6px;
+  background: #999;
+}
+
+/* line 131, ../sass/app.scss */
+::-mz-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* line 136, ../sass/app.scss */
+::-mz-scrollbar-button:start:decrement,
+::-mz-scrollbar-button:end:increment {
+  display: none;
+}
+
+/* line 139, ../sass/app.scss */
+::-mz-scrollbar-track-piece {
+  background-color: #EFEFEF;
+  -mz-border-radius: 4px;
+}
+
+/* line 143, ../sass/app.scss */
+::-mz-scrollbar-thumb:vertical {
+  -mz-border-radius: 6px;
+  background: #999;
+}
+
+/* line 149, ../sass/app.scss */
+#anunciate {
+  background: #f4de00;
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  float: right;
+  padding: 5px 30px;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 157, ../sass/app.scss */
+#anunciate:hover {
+  background: #ccb900;
+}
+
+/* line 161, ../sass/app.scss */
+#balnearios {
+  background: #2487d4;
+}
+/* line 164, ../sass/app.scss */
+#balnearios:hover h2 {
+  margin-left: 11px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 161, ../sass/app.scss */
+  #balnearios {
+    display: none;
+    float: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 161, ../sass/app.scss */
+  #balnearios {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 176, ../sass/app.scss */
+#buscador {
+  background: #d43030;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  height: 34px;
+  left: 0px;
+  padding-left: 20px;
+  position: relative;
+  top: -18px;
+  width: 30%;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 176, ../sass/app.scss */
+  #buscador {
+    padding-left: 10px;
+    height: 50px;
+    width: 100%;
+  }
+}
+
+/* line 195, ../sass/app.scss */
+#cintillo {
+  background: #d43030;
+  height: 40px;
+  padding: 10px 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 320px) {
+  /* line 195, ../sass/app.scss */
+  #cintillo {
+    background: #fff;
+  }
+}
+
+/* line 204, ../sass/app.scss */
+#contacto {
+  display: inline-block;
+  margin-right: 30px;
+  width: 370px;
+}
+
+/* line 209, ../sass/app.scss */
+#comentario {
+  display: inline-block;
+  position: relative;
+  top: -90px;
+  left: 0px;
+  width: 550px;
+}
+
+/* line 216, ../sass/app.scss */
+#costos {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  height: 310px;
+  padding: 10px;
+  width: 40%;
+}
+/* line 225, ../sass/app.scss */
+#costos p {
+  color: #000;
+}
+
+/* line 229, ../sass/app.scss */
+#contentComentarios {
+  display: relative;
+  width: 100%;
+}
+
+/* line 233, ../sass/app.scss */
+#descripcion {
+  float: left;
+  width: 100%;
+}
+
+/* line 237, ../sass/app.scss */
+#direccion {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  height: 310px;
+  padding: 10px;
+  width: 34%;
+}
+/* line 246, ../sass/app.scss */
+#direccion p {
+  color: #000;
+}
+
+/* line 250, ../sass/app.scss */
+#facebook, #google, #youtube, #twitter {
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 60px;
+  margin-right: 16px;
+  opacity: .7;
+  padding-top: 18px;
+  text-align: center;
+  width: 60px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+/* line 265, ../sass/app.scss */
+#facebook a {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 269, ../sass/app.scss */
+#formComentario {
+  display: none;
+  width: 100%;
+}
+
+/* line 273, ../sass/app.scss */
+#formulario {
+  background: #faa923;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+}
+/* line 281, ../sass/app.scss */
+#formulario input, #formulario textarea {
+  width: 300px !important;
+}
+/* line 284, ../sass/app.scss */
+#formulario label, #formulario input {
+  display: block;
+  font-family: "BenchNine", sans-serif;
+  font-size: 1.4em !important;
+}
+
+/* line 290, ../sass/app.scss */
+#footer {
+  background: #faa923;
+  margin-top: -10px;
+}
+
+/* line 294, ../sass/app.scss */
+#galeria {
+  height: 540px;
+}
+
+/* line 297, ../sass/app.scss */
+#hoteles {
+  background: #adadad;
+  cursor: pointer;
+  height: 242px;
+}
+/* line 302, ../sass/app.scss */
+#hoteles:hover h2 {
+  margin-left: 11px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 297, ../sass/app.scss */
+  #hoteles {
+    display: none;
+    float: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 297, ../sass/app.scss */
+  #hoteles {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 314, ../sass/app.scss */
+#imgTop {
+  top: 0px;
+  left: 0px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 321, ../sass/app.scss */
+#iconRedes {
+  top: -160px;
+  left: 720px;
+  position: relative;
+  width: 30%;
+  z-index: 100;
+}
+
+/* line 328, ../sass/app.scss */
+#logo {
+  float: left;
+  height: 310px;
+  padding: 30px 0px 10px;
+  text-align: center;
+  width: 26%;
+}
+
+/* line 336, ../sass/app.scss */
+#logotipo {
+  height: 30px;
+  float: left;
+  position: relative;
+  top: -5px;
+  margin-left: 15px;
+  width: 22%;
+  z-index: 10001;
+}
+@media only screen and (max-width: 320px) {
+  /* line 336, ../sass/app.scss */
+  #logotipo {
+    width: 50%;
+    left: 20%;
+  }
+}
+
+/* line 349, ../sass/app.scss */
+#menu {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0px 10px;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 349, ../sass/app.scss */
+  #menu {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 349, ../sass/app.scss */
+  #menu {
+    margin: 0px;
+  }
+}
+/* line 359, ../sass/app.scss */
+#menu li {
+  display: inline;
+  height: 33px;
+  list-style-type: none;
+}
+@media only screen and (max-width: 320px) {
+  /* line 359, ../sass/app.scss */
+  #menu li {
+    display: block;
+    height: 50px;
+    text-align: center;
+    width: auto;
+  }
+}
+/* line 370, ../sass/app.scss */
+#menu a {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.3em;
+  padding: 10px 7px;
+  text-decoration: none;
+}
+/* line 376, ../sass/app.scss */
+#menu a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 768px) {
+  /* line 370, ../sass/app.scss */
+  #menu a {
+    padding: 0 12px 10px 12px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 370, ../sass/app.scss */
+  #menu a {
+    padding: 10px 25%;
+    font-size: 1.4em;
+  }
+}
+
+/* line 388, ../sass/app.scss */
+#mostrar, #ocultar {
+  border: 0;
+}
+
+/* line 391, ../sass/app.scss */
+#navegacion {
+  background: #d43030;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  height: 34px;
+  left: 0px;
+  position: relative;
+  top: -18px;
+  width: 70%;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 391, ../sass/app.scss */
+  #navegacion {
+    height: 43px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 391, ../sass/app.scss */
+  #navegacion {
+    height: 310px;
+    top: 10px;
+    width: 100%;
+  }
+}
+
+/* line 413, ../sass/app.scss */
+#navegacionIndex {
+  background: #d43030;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  height: 34px;
+  left: 0px;
+  position: relative;
+  top: -18px;
+  width: 100%;
+  z-index: 0;
+}
+@media only screen and (max-width: 768px) {
+  /* line 413, ../sass/app.scss */
+  #navegacionIndex {
+    height: 43px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 413, ../sass/app.scss */
+  #navegacionIndex {
+    height: 310px;
+    top: 10px;
+    width: 100%;
+  }
+}
+
+/* line 433, ../sass/app.scss */
+#publicidadTop {
+  display: relative;
+  width: 100%;
+}
+@media only screen and (max-width: 320px) {
+  /* line 433, ../sass/app.scss */
+  #publicidadTop {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 441, ../sass/app.scss */
+#restaurantes {
+  background: #e14602;
+}
+/* line 444, ../sass/app.scss */
+#restaurantes:hover h2 {
+  margin-left: 11px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 441, ../sass/app.scss */
+  #restaurantes {
+    display: none;
+    float: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 441, ../sass/app.scss */
+  #restaurantes {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 456, ../sass/app.scss */
+#redesBottom {
+  background: #d8d8d8;
+  display: none;
+  padding: 15px 10px 10px 10px;
+  float: left;
+  width: 100%;
+}
+@media only screen and (max-width: 320px) {
+  /* line 462, ../sass/app.scss */
+  #redesBottom h2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 456, ../sass/app.scss */
+  #redesBottom {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 456, ../sass/app.scss */
+  #redesBottom {
+    background: #FFF;
+    padding: 0px;
+  }
+}
+
+/* line 475, ../sass/app.scss */
+#respuesta {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 484, ../sass/app.scss */
+#search input[type="text"] {
+  background: url(../images/search-white.png) no-repeat 5% 50% white;
+  border: 0 none;
+  box-shadow: inset 0px 0px 3px #474747;
+  box-shadow: -moz-inset 0px 0px 3px #474747;
+  box-shadow: -webkit-inset 0px 0px 3px #474747;
+  color: #7a7a7a;
+  float: left;
+  height: 24px;
+  padding-left: 30px;
+  margin-top: 5px;
+  width: 220px;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 484, ../sass/app.scss */
+  #search input[type="text"] {
+    background: url(../images/search-white.png) no-repeat 1% 50% white;
+    border-radius: 0px;
+    padding: 20px 0px 20px 25px;
+    width: 570px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 484, ../sass/app.scss */
+  #search input[type="text"] {
+    width: 200px;
+  }
+}
+
+/* line 507, ../sass/app.scss */
+#search input[type="submit"] {
+  border: 1px solid #e63b3b;
+  border-radius: 100px;
+  box-shadow: inset 0px 0px 3px #963535;
+  box-shadow: -moz-inset 0px 0px 3px #963535;
+  box-shadow: -webkit-inset 0px 0px 3px #963535;
+  color: white;
+  float: left;
+  height: 26px;
+  margin-top: 4px;
+  margin-left: 5px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 26px;
+}
+@media only screen and (max-width: 768px) {
+  /* line 507, ../sass/app.scss */
+  #search input[type="submit"] {
+    color: black;
+    border-radius: 0px;
+    height: 40px;
+    text-transform: uppercase;
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 507, ../sass/app.scss */
+  #search input[type="submit"] {
+    width: 50px;
+  }
+}
+
+/* line 531, ../sass/app.scss */
+#slogan {
+  float: right;
+  width: 60%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 531, ../sass/app.scss */
+  #slogan {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 531, ../sass/app.scss */
+  #slogan {
+    display: block;
+    margin-top: 50px;
+    width: auto;
+  }
+}
+/* line 542, ../sass/app.scss */
+#slogan h3 {
+  float: left;
+  display: inline;
+}
+
+/* line 547, ../sass/app.scss */
+#servicios {
+  float: left;
+  width: 100%;
+}
+
+/* line 551, ../sass/app.scss */
+#sitios {
+  background: #ba9c7d;
+}
+/* line 554, ../sass/app.scss */
+#sitios:hover h2 {
+  margin-left: 11px;
+}
+
+/* line 558, ../sass/app.scss */
+#top {
+  height: 266px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+/* line 564, ../sass/app.scss */
+#twitter a {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 568, ../sass/app.scss */
+#txtDescripcion {
+  background: #005c99;
+  float: right;
+  opacity: .9;
+  padding: 10px;
+  width: 50%;
+}
+/* line 574, ../sass/app.scss */
+#txtDescripcion p {
+  color: white;
+}
+
+/* line 578, ../sass/app.scss */
+#txtServicios {
+  background: #005c99;
+  float: left;
+  opacity: .9;
+  padding: 10px;
+  width: 50%;
+}
+/* line 584, ../sass/app.scss */
+#txtServicios p {
+  color: white;
+}
+/* line 587, ../sass/app.scss */
+#txtServicios ul {
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-left: 20px;
+}
+
+/* line 595, ../sass/app.scss */
+#videoInicio {
+  position: absolute;
+  z-index: 10001;
+}
+
+/* line 599, ../sass/app.scss */
+#videoPlay {
+  background: url(../images/bg-black.png) repeat;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  height: 160px;
+  position: absolute;
+  left: 700px;
+  padding: 4px;
+  top: 110px;
+  width: 290px;
+  z-index: 100;
+}
+/* line 610, ../sass/app.scss */
+#videoPlay object, #videoPlay param, #videoPlay embed {
+  float: left;
+  position: absolute;
+}
+/* line 614, ../sass/app.scss */
+#videoPlay #play {
+  float: left;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 1001;
+}
+@media only screen and (max-width: 768px) {
+  /* line 599, ../sass/app.scss */
+  #videoPlay {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 599, ../sass/app.scss */
+  #videoPlay {
+    display: none;
+  }
+}
+
+/* line 629, ../sass/app.scss */
+#vidaNocturna {
+  background: #381743;
+}
+/* line 632, ../sass/app.scss */
+#vidaNocturna:hover h2 {
+  margin-left: 11px;
+}
+
+/* line 636, ../sass/app.scss */
+#videoModal {
+  background: black;
+  display: absolute;
+  z-index: 10010;
+}
+
+/* line 641, ../sass/app.scss */
+#youtube a {
+  color: white;
+  font-size: 1.5em;
+}
+
+/* line 645, ../sass/app.scss */
+.altoDirectorio {
+  height: 150px;
+}
+/* line 647, ../sass/app.scss */
+.altoDirectorio img {
+  padding: auto 0px;
+}
+
+/* line 652, ../sass/app.scss */
+.black {
+  background: #000;
+  border-radius: 8px 8px 0px 0px;
+  overflow: hidden;
+}
+
+/* line 657, ../sass/app.scss */
+.bordeDerecho {
+  border-right: 1px solid #e0e0e0;
+}
+
+/* line 660, ../sass/app.scss */
+.buscadorFondo {
+  background: #e5e5e5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-top: 15px !important;
+  padding: 10px;
+}
+
+/* line 666, ../sass/app.scss */
+.cargandoTexto {
+  margin: 20px auto;
+  text-align: center;
+  width: 50%;
+}
+
+/* line 671, ../sass/app.scss */
+.centrar {
+  text-align: center;
+}
+
+/* line 674, ../sass/app.scss */
+.contenedor {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: #fcfcfc;
+  float: left;
+  height: 386px;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  z-index: 0;
+}
+/* line 688, ../sass/app.scss */
+.contenedor:hover {
+  background: #efb000;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+/* line 694, ../sass/app.scss */
+.contenedor:hover .tituloSeccion {
+  background: #efb000;
+}
+/* line 697, ../sass/app.scss */
+.contenedor:hover p {
+  float: right;
+  color: white;
+}
+/* line 701, ../sass/app.scss */
+.contenedor:hover .datos {
+  height: 88px;
+  opacity: .8;
+  width: 50%;
+  z-index: 100;
+}
+/* line 707, ../sass/app.scss */
+.contenedor:hover .sobre {
+  left: 5px;
+}
+/* line 710, ../sass/app.scss */
+.contenedor:hover .facebookUrl {
+  opacity: .8;
+  left: 250px;
+}
+/* line 714, ../sass/app.scss */
+.contenedor:hover .twitterUrl {
+  opacity: .8;
+  left: 200px;
+}
+
+/* line 719, ../sass/app.scss */
+.color {
+  background: #e5e5e5;
+  height: 350px;
+  overflow: auto;
+  padding-top: 10px !important;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 725, ../sass/app.scss */
+.color ul {
+  margin: 0px;
+}
+/* line 728, ../sass/app.scss */
+.color li {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-left: 20px;
+}
+/* line 734, ../sass/app.scss */
+.color:hover {
+  background: #cccccc;
+}
+
+/* line 738, ../sass/app.scss */
+.content-switcher {
+  display: none;
+}
+
+/* line 741, ../sass/app.scss */
+.content-switcher:first-child {
+  display: block;
+}
+
+/* line 744, ../sass/app.scss */
+.contenedorTitulos, #balnearios, #hoteles, #restaurantes, #sitios, #vidaNocturna {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  padding: 20px;
+  width: 100%;
+}
+
+/* line 750, ../sass/app.scss */
+.contestacion {
+  border-radius: 3px;
+  background: #eaeaea;
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: 4px;
+  width: 460px;
+}
+/* line 757, ../sass/app.scss */
+.contestacion p {
+  color: #0a0a0a;
+}
+
+/* line 762, ../sass/app.scss */
+.custom label {
+  color: #aaaaaa;
+  font-family: "Dosis", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 768, ../sass/app.scss */
+.custom select {
+  border: 1px solid #CCC;
+  padding: 8px;
+}
+
+/* line 773, ../sass/app.scss */
+.datosDireccion, .datosMail, .datosTelefono, .datosFacebook, .datosTwitter, .datosYoutube {
+  color: #333;
+  display: block;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  line-height: 2em;
+  padding: 3px 0px 3px 60px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 781, ../sass/app.scss */
+.datosDireccion:hover, .datosMail:hover, .datosTelefono:hover, .datosFacebook:hover, .datosTwitter:hover, .datosYoutube:hover {
+  padding: 3px 0px 3px 70px;
+}
+
+/* line 785, ../sass/app.scss */
+.datosDireccion {
+  background: url(../images/direccion.gif) no-repeat 3%;
+}
+
+/* line 788, ../sass/app.scss */
+.datosMail {
+  background: url(../images/mail.gif) no-repeat 3%;
+}
+
+/* line 791, ../sass/app.scss */
+.datosTelefono {
+  background: url(../images/telefono.gif) no-repeat 3%;
+}
+
+/* line 794, ../sass/app.scss */
+.datosFacebook {
+  background: url(../images/facebook.gif) no-repeat 3%;
+}
+
+/* line 797, ../sass/app.scss */
+.datosTwitter {
+  background: url(../images/twitter.gif) no-repeat 3%;
+}
+
+/* line 800, ../sass/app.scss */
+.datosYoutube {
+  background: url(../images/youtube.gif) no-repeat 3%;
+}
+
+/* line 803, ../sass/app.scss */
+.datosEmergencia {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+}
+
+/* line 807, ../sass/app.scss */
+.descripcion {
+  color: #e2e2e2;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 807, ../sass/app.scss */
+  .descripcion {
+    font-size: 1.4em;
+  }
+}
+
+/* line 815, ../sass/app.scss */
+.descripcionContacto {
+  color: #333;
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+/* line 821, ../sass/app.scss */
+.etiquetas {
+  background: #ffbb0f;
+  color: #000;
+  font-weight: bold;
+}
+
+/* line 826, ../sass/app.scss */
+.expande {
+  height: 300px;
+}
+
+/* line 829, ../sass/app.scss */
+.facebookUrl {
+  background: black;
+  border-radius: 50%;
+  height: 35px;
+  left: 290px;
+  position: absolute;
+  top: 300px;
+  width: 35px;
+  z-index: 999;
+  opacity: 0;
+  text-align: center;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 834, ../sass/app.scss */
+.facebookUrl img {
+  border: 0px;
+  margin-top: 7px;
+}
+
+/* line 839, ../sass/app.scss */
+.fecha {
+  color: #666666;
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 0.8em;
+}
+
+/* line 845, ../sass/app.scss */
+.fechaArticulo {
+  color: #c6c6c6;
+  font-family: arial, sans-serif;
+  font-size: 11px;
+}
+
+/* line 850, ../sass/app.scss */
+.fondo {
+  background: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 330px;
+  padding: 15px;
+  text-align: justify;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 857, ../sass/app.scss */
+.fondo:hover > .tituloSeccionDirectorio {
+  color: #FFF;
+  padding-left: 10px;
+}
+/* line 861, ../sass/app.scss */
+.fondo:hover > p {
+  color: #FFF !important;
+}
+/* line 864, ../sass/app.scss */
+.fondo:hover {
+  background: #6cbaba;
+}
+/* line 867, ../sass/app.scss */
+.fondo hr {
+  border: 1px solid #EFEFEF !important;
+}
+
+/* line 871, ../sass/app.scss */
+.fondoBlanco {
+  background: white;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 15px;
+  text-align: justify;
+}
+
+/* line 877, ../sass/app.scss */
+.fotoSeccion {
+  float: left;
+  width: 100%;
+}
+/* line 880, ../sass/app.scss */
+.fotoSeccion:hover .sobreSecciones {
+  opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+  /* line 877, ../sass/app.scss */
+  .fotoSeccion {
+    display: none;
+    float: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 877, ../sass/app.scss */
+  .fotoSeccion {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 892, ../sass/app.scss */
+.fotoHotel {
+  float: left;
+  width: 100%;
+}
+/* line 895, ../sass/app.scss */
+.fotoHotel:hover .sobreSecciones {
+  opacity: 1;
+}
+/* line 898, ../sass/app.scss */
+.fotoHotel img {
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  /* line 892, ../sass/app.scss */
+  .fotoHotel {
+    display: none;
+    float: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 892, ../sass/app.scss */
+  .fotoHotel {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 910, ../sass/app.scss */
+.generalDatos {
+  color: #333;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+/* line 915, ../sass/app.scss */
+.gris {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  background: url(../images/comillas.png) no-repeat 90% #eaeaea;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Carme', sans-serif;
+  font-size: 20px;
+  padding: 40px 10px;
+}
+/* line 922, ../sass/app.scss */
+.gris:hover {
+  background: url(../images/comillas.png) no-repeat 70% #eaeaea;
+}
+/* line 925, ../sass/app.scss */
+.gris a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 930, ../sass/app.scss */
+.grisMedio {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  background: url(../images/comillas.png) no-repeat 90% #e0e0e0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Carme', sans-serif;
+  font-size: 20px;
+  padding: 40px 10px;
+}
+/* line 937, ../sass/app.scss */
+.grisMedio:hover {
+  background: url(../images/comillas.png) no-repeat 70% #e0e0e0;
+}
+/* line 940, ../sass/app.scss */
+.grisMedio a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 945, ../sass/app.scss */
+.grisFuerte {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  background: url(../images/comillas.png) no-repeat 90% #d6d6d6;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Carme', sans-serif;
+  font-size: 20px;
+  padding: 40px 10px;
+}
+/* line 952, ../sass/app.scss */
+.grisFuerte:hover {
+  background: url(../images/comillas.png) no-repeat 70% #d6d6d6;
+}
+/* line 955, ../sass/app.scss */
+.grisFuerte a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 960, ../sass/app.scss */
+.iconos {
+  background: white;
+  left: 0px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 968, ../sass/app.scss */
+.item-number {
+  color: black !important;
+  display: block;
+  height: 21px;
+  font-size: 1.1em;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 10px;
+  position: absolute;
+  text-align: center;
+  width: 21px;
+  z-index: 6;
+}
+
+/* line 980, ../sass/app.scss */
+.item-number:nth-child(1) {
+  margin-left: 15px;
+}
+
+/* line 983, ../sass/app.scss */
+.item-number:nth-child(2) {
+  margin-left: 72px;
+}
+
+/* line 986, ../sass/app.scss */
+.item-number:nth-child(3) {
+  margin-left: 132px;
+}
+
+/* line 989, ../sass/app.scss */
+.item-number:nth-child(4) {
+  margin-left: 188px;
+}
+
+/* line 992, ../sass/app.scss */
+.item-number:nth-child(5) {
+  margin-left: 246px;
+}
+
+/* line 995, ../sass/app.scss */
+.leerMas {
+  color: #b24300;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+/* line 1002, ../sass/app.scss */
+.linksArticulos {
+  color: #307b2c;
+  display: block;
+  font-family: arial, sans-serif;
+  text-decoration: none;
+}
+
+/* line 1008, ../sass/app.scss */
+.logos {
+  float: left;
+  width: 160px;
+}
+/* line 1011, ../sass/app.scss */
+.logos a {
+  color: #368a31;
+  border: 0px;
+  margin: 0px 5px;
+}
+/* line 1015, ../sass/app.scss */
+.logos a:hover {
+  color: #f41b00;
+}
+
+/* line 1020, ../sass/app.scss */
+.logosBusqueda {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  background: white;
+  box-shadow: 0px 0px 5px rgba(178, 178, 178, 0.5);
+  -webkit-box-shadow: 0px 0px 5px rgba(178, 178, 178, 0.5);
+  -moz-box-shadow: 0px 0px 5px rgba(178, 178, 178, 0.5);
+  float: left;
+  height: 160px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 180px;
+}
+/* line 1033, ../sass/app.scss */
+.logosBusqueda img {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  width: 100%;
+}
+/* line 1037, ../sass/app.scss */
+.logosBusqueda:hover > a img {
+  width: 90%;
+}
+/* line 1040, ../sass/app.scss */
+.logosBusqueda:hover {
+  border-bottom: 4px solid #fe542d;
+  box-shadow: 0px 0px 7px rgba(100, 100, 100, 0.8);
+  -webkit-box-shadow: 0px 0px 7px rgba(100, 100, 100, 0.8);
+  -moz-box-shadow: 0px 0px 7px rgba(100, 100, 100, 0.8);
+}
+
+/* line 1047, ../sass/app.scss */
+.margenSuperior {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: white;
+  border-top: 5px solid #e5e5e5;
+  margin-top: 20px;
+  padding: 10px;
+}
+/* line 1054, ../sass/app.scss */
+.margenSuperior:hover {
+  border-top: 5px solid #88b337;
+}
+
+/* line 1058, ../sass/app.scss */
+.margenInterior {
+  padding: 14px;
+}
+
+/* line 1061, ../sass/app.scss */
+.masContenido {
+  float: left;
+  height: 45px;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 100%;
+}
+/* line 1067, ../sass/app.scss */
+.masContenido .btnMetro {
+  background: linear-gradient(top, #efefef, #ffffff);
+  background: -moz-linear-gradient(top, #efefef, white);
+  background: -ms-linear-gradient(top, #efefef, white);
+  background: -o-linear-gradient(top, #efefef, white);
+  background: -webkit-linear-gradient(top, #efefef, white);
+  color: #cccccc;
+  border-left: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.4em;
+  margin: 10px 0px 0px 0px;
+  padding: 15px 56px;
+}
+/* line 1080, ../sass/app.scss */
+.masContenido .btnMetro:hover {
+  background: #35aa47;
+  color: #ffffff;
+  text-shadow: 0px 1px 1px #333;
+}
+@media only screen and (max-width: 768px) {
+  /* line 1067, ../sass/app.scss */
+  .masContenido .btnMetro {
+    padding: 15px 72px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 1067, ../sass/app.scss */
+  .masContenido .btnMetro {
+    padding: 15px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 1061, ../sass/app.scss */
+  .masContenido {
+    margin-bottom: 15px;
+  }
+}
+
+/* line 1096, ../sass/app.scss */
+.margenTop {
+  margin-top: 10px;
+}
+
+/* line 1099, ../sass/app.scss */
+.mostrar, .ocultar {
+  display: block;
+  width: 150px;
+}
+
+/* line 1103, ../sass/app.scss */
+.mostrar-mas {
+  background: #e5e5e5;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+/* line 1111, ../sass/app.scss */
+.mostrar-mas a {
+  color: #333;
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 5px 20px;
+}
+
+/* line 1118, ../sass/app.scss */
+.ocultar {
+  display: none;
+}
+
+/* line 1121, ../sass/app.scss */
+.opinion {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(142, 142, 142, 0.5);
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 490px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1133, ../sass/app.scss */
+.opinion:hover {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+}
+/* line 1136, ../sass/app.scss */
+.opinion p {
+  color: #191919;
+}
+
+/* line 1140, ../sass/app.scss */
+.paginacion {
+  float: left;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 1146, ../sass/app.scss */
+.paddingleft {
+  border-bottom: 5px solid #92cddb;
+  padding-left: 20px;
+}
+
+/* line 1150, ../sass/app.scss */
+.progress-container {
+  background: url(../images/slider-fondo.png) no-repeat;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 120px;
+  width: 400px;
+}
+
+/* line 1157, ../sass/app.scss */
+.progress-selected {
+  background: url(../images/selector.png) no-repeat;
+  display: block;
+  height: 31px;
+  margin: 5px 0px 0px 10px;
+  position: absolute;
+  width: 31px;
+  z-index: 5;
+}
+
+/* line 1165, ../sass/app.scss */
+.tituloContacto {
+  color: #c9c9c9;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 36px;
+  text-shadow: 0px 1px 1px black;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  padding-bottom: 20px;
+}
+
+/* line 1170, ../sass/app.scss */
+.titulos, .tituloSecciones {
+  color: #cccccc;
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  text-shadow: 0px 1px 1px black;
+  margin: 10px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1179, ../sass/app.scss */
+.titulos:hover, .tituloSecciones:hover {
+  color: #ffc800;
+  margin-left: 20px;
+  letter-spacing: .1em;
+}
+
+/* line 1185, ../sass/app.scss */
+.titulosDirectorio {
+  color: #ed3e11;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  text-shadow: 0px 1px 1px black;
+  margin: 10px;
+}
+
+/* line 1192, ../sass/app.scss */
+.tituloSecciones {
+  color: #cccccc;
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  text-shadow: 0px 1px 1px black;
+  margin: 10px;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1201, ../sass/app.scss */
+.tituloSecciones:hover {
+  color: #ffc800;
+  margin-left: 20px;
+  letter-spacing: .1em;
+}
+
+/* line 1207, ../sass/app.scss */
+.tituloSeccion {
+  background: #f2f0f0;
+  display: block;
+  padding: 3px 5px;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1215, ../sass/app.scss */
+.tituloSeccion p {
+  margin: 0px;
+}
+
+/* line 1219, ../sass/app.scss */
+.tituloSeccionDirectorio {
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  color: #333;
+  font-family: 'Carme', sans-serif;
+  font-size: 28px;
+}
+
+/* line 1225, ../sass/app.scss */
+.top {
+  background: url(../images/top-fondo.gif) repeat-y;
+  margin-top: 15px !important;
+}
+
+/* line 1229, ../sass/app.scss */
+.tweet {
+  color: #9b9b9b;
+  float: left;
+  font-family: "Dosis", sans-serif;
+  font-size: 1em;
+  margin-bottom: 7px;
+  width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 1229, ../sass/app.scss */
+  .tweet {
+    margin-bottom: 12px;
+    padding-left: 5px;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 1229, ../sass/app.scss */
+  .tweet {
+    display: none;
+    float: none;
+  }
+}
+
+/* line 1246, ../sass/app.scss */
+.red {
+  float: left;
+  padding: 5px;
+  margin: 3px 10px;
+  width: 66px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 1246, ../sass/app.scss */
+  .red {
+    margin: 2px;
+  }
+}
+
+/* line 1255, ../sass/app.scss */
+.redes {
+  left: 10px;
+  position: relative;
+  top: -5px;
+  width: 100%;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  /* line 1255, ../sass/app.scss */
+  .redes {
+    display: none;
+  }
+}
+
+/* line 1265, ../sass/app.scss */
+.redesSecciones {
+  display: inline-block;
+  margin: 30px 3px 20px 3px;
+  opacity: .4;
+  text-align: center;
+  width: 30%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1274, ../sass/app.scss */
+.redesSecciones:hover {
+  opacity: 1;
+}
+
+/* line 1278, ../sass/app.scss */
+.seudonimo {
+  color: #00558e;
+  display: block;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* line 1285, ../sass/app.scss */
+.separador {
+  float: left;
+  width: 100%;
+}
+
+/* line 1289, ../sass/app.scss */
+.sinBorde {
+  margin-right: 0px;
+  padding-right: 0px !important;
+}
+
+/* line 1293, ../sass/app.scss */
+.sinPadding {
+  padding-left: 0px !important;
+}
+
+/* line 1296, ../sass/app.scss */
+.sobre {
+  background: url(../images/sobre.png) no-repeat;
+  height: 345px;
+  left: -100px;
+  position: absolute;
+  top: 2px;
+  width: 56px;
+  z-index: 999;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+/* line 1308, ../sass/app.scss */
+.sobreSecciones {
+  border-top: 2px solid #262626;
+  background: url(../images/fondoBlanco.png) repeat;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  bottom: 1px;
+  left: 0px;
+  opacity: 0;
+  padding: 10px 0px 10px 10px;
+  position: absolute;
+  text-align: right;
+  vertical-align: middle;
+  width: 100%;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+/* line 1326, ../sass/app.scss */
+.sobreSecciones span {
+  color: white;
+}
+/* line 1329, ../sass/app.scss */
+.sobreSecciones i {
+  color: #dbdbdb;
+  font-size: 0.9em;
+  margin-left: 0.8em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 1329, ../sass/app.scss */
+  .sobreSecciones i {
+    font-size: 2.3em;
+  }
+}
+
+/* line 1338, ../sass/app.scss */
+.subtitulos {
+  color: #FFF;
+  display: block;
+  font-family: "BenchNine", sans-serif;
+  font-size: 2.4em;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* line 1346, ../sass/app.scss */
+.titulosFooter {
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
+  text-shadow: 0px 1px 1px black;
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 1351, ../sass/app.scss */
+.tituloEmergencia {
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+
+/* line 1355, ../sass/app.scss */
+.topfooter {
+  margin-top: 10px;
+}
+/* line 1357, ../sass/app.scss */
+.topfooter p {
+  color: black;
+}
+
+/* line 1361, ../sass/app.scss */
+.twitterUrl {
+  background: black;
+  border-radius: 50%;
+  height: 35px;
+  left: 290px;
+  position: absolute;
+  top: 300px;
+  width: 35px;
+  z-index: 999;
+  opacity: 0;
+  text-align: center;
+  transition: all .8s ease-in-out;
+  -moz-transition: all .8s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+}
+/* line 1368, ../sass/app.scss */
+.twitterUrl img {
+  border: 0px;
+  margin-top: 7px;
+}
+
+/* line 1373, ../sass/app.scss */
+.txtCargando {
+  color: #368a31;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px;
+}
